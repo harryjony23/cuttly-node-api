@@ -7,10 +7,10 @@ get your secret API key.
 This application is hosted on Glitch @ https://cuttly-node-api.glitch.me/. On loading the base url, you should be able to see a response 
 from the system. Here are the API Endpoints that are available with their requirements (if applicable):
 
-- __[GET] https://cuttly-node-api.glitch.me/__
+- __[GET] https://cuttly-nodejs-api.glitch.me/__
   Gives you a response containing details about the application along with author details
 
-- __[POST] https://cuttly-node-api.glitch.me/api/shrink-url__
+- __[POST] https://cuttly-nodejs-api.glitch.me/api/shrink-url__
   Payload:
   ```
   {
@@ -24,7 +24,7 @@ from the system. Here are the API Endpoints that are available with their requir
   custom shortname what you wish to give for your URL. If the shortname is available through Cutt.ly then its applied. If omitted, then cutt.ly will 
   help generate a custom shortname for you
 
-- __[POST] https://cuttly-node-api.glitch.me/api/get-stats__
+- __[POST] https://cuttly-nodejs-api.glitch.me/api/get-stats__
   Payload:
   ```
   {
