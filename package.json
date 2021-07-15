@@ -4,7 +4,7 @@
   "description": "NodeJS Application - Backend Structure",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon ./server.js"
+    "start": "node ./server.js"
   },
   "author": "Sricharan Krishnan | https://github.com/sricharankrishnan",
   "dependencies": {
@@ -14,6 +14,9 @@
     "ejs": "3.0.1",
     "express": "^4.17.1",
     "express-minify-html": "^0.12.0"
+  },
+  "engines": {
+    "node": "12.x"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
