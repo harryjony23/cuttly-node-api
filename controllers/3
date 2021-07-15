@@ -1,0 +1,67 @@
+/* npm imports */
+const axios = require("axios");
+
+/* app imports */
+const __base = global.approot;
+const consoleLogger = require(__base + "/utils/logger.js");
+const logApiError = require(__base + "/utils/log-api-error.js");
+
+const fileImports = {
+  models: {
+    errorResponse: require(__base + "/models/error-response.models.js"),
+    successResponse: require(__base + "/models/success-response.models.js")
+  },
+};
+
+class ApiHandler {
+  fetchGithubUser(username, callback) {
+    consoleLogger(`fetchGithubUser() -> ${username}`);
+
+    let urlString = `https://api.github.com/users/${username}`;
+    axios.get(urlString).then((response) => {
+      callback(response);
+    })
+    .catch((error) => {
+      logApiError(error);
+
+      /* send it back! */
+      let {response} = error;
+      callback(response);
+    });
+  };
+
+  makeGetRequestAndReturnJson(requestUrl, callback) {
+    let {errorResponse, successResponse} = fileImports.models;
+
+    axios.get(requestUrl).then((response) => {
+      if (response.status === 200 || response.statusText === "OK") {
+        successResponse.payload = response.data;
+        callback(successResponse);
+      }
+      else {
+        errorResponse.payload = response.data;
+        callback(errorResponse);
+      }
+    })
+    .catch((error) => {
+      logApiError(error);
+    
+      if ("response" in error) {
+        errorResponse.payload = error.response;
+      }
+      else if ("request" in error) {
+        errorResponse.payload = error.request;
+      }
+      else {
+        errorResponse.payload = error.message;
+      }
+
+      callback(errorResponse);
+    });
+  };
+
+  sendExceptionCaughtResponseToCaller(error, callback) {
+  };
+}
+module.exports = ApiHandler;
+
