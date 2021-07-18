@@ -3,6 +3,8 @@ An open source Node/Express app that helps you to perform requests to Cutt.ly AP
 Cutt.ly is a Url-Shortner service. (https://cutt.ly/). To be able to use this system, please ensure to register with Cutt.ly and 
 get your secret API key.
 
+You can use this application either by making requests to the endpoints that are given below or you could even download this locally to use it for your project requirements. The endpoints and their respective methods would remain the same.
+
 # Hosting and API endpoints
 This application is hosted on Glitch @ https://cuttly-node-api.glitch.me/. On loading the base url, you should be able to see a response 
 from the system. Here are the API Endpoints that are available with their requirements (if applicable):
