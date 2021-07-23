@@ -39,12 +39,8 @@ from the system. Here are the API Endpoints that are available with their requir
 - ![Post Request](https://img.shields.io/badge/method-post-orange) https://cuttly-nodejs-api.glitch.me/api/shrink-url<br/>
   Payload:
 
-  ```
-  {
-    "apiKey": "your-api-key",
-    "requestUrl": "https://www.example.com",
-    "name": "someexamplename"
-  }
+  ```console
+  foo@bar:~$ curl -H "Content-type: application/json" -XPOST -d '{"apiKey": "your-api-key", "requestUrl": "https://www.example.com", "name": "someexamplename"}' 'https://cuttly-nodejs-api.glitch.me/api/shrink-url'
   ```
 
   Helps to create a shortened version of that url. The **apiKey** and **requestUrl** fields are required. The api key is given to you when
@@ -54,11 +50,8 @@ from the system. Here are the API Endpoints that are available with their requir
 
 - ![Post Request](https://img.shields.io/badge/method-post-orange) https://cuttly-nodejs-api.glitch.me/api/get-stats<br/>
   Payload:
-  ```
-  {
-    "apiKey": "your-api-key",
-    "url": "https://cutt.ly/exampleshortname"
-  }
+  ```console
+  foo@bar:~$ curl -H "Content-type: application/json" -XPOST -d '{"apiKey": "your-api-key", "url": "https://cutt.ly/exampleshortname"}' 'https://cuttly-nodejs-api.glitch.me/api/get-stats'
   ```
   Provides you the statistics of the shortend url. The **apiKey** field is required which is given to you when you create your account with
   cutt.ly and the **url** field contains the shortened url of which you wish to get the stats of. Both of these fields are required for this
