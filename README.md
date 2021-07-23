@@ -6,20 +6,30 @@
 <br/>
 <br/>
 ## About
-An open source Node/Express app that helps you to perform requests to Cutt.ly API @ (Cutty API Docs)[https://cutt.ly/api-documentation/]
-Cutt.ly is a Url-Shortner service. (https://cutt.ly/). To be able to use this system, please ensure to register with Cutt.ly and 
-get your secret API key.
+An open source Node/Express app that helps you to perform requests to Cutt.ly API @ <https://cutt.ly/api-documentation/> Cutt.ly is a Url-Shortner service (<https://cutt.ly/>). To be able to use this system, please ensure to register with Cutt.ly and get your secret API key.
 
-You can use this application either by making requests to the endpoints that are given below or you could even download this locally to use it for your project requirements. The endpoints and their respective methods would remain the same.
+Please note that this system helps cater to most of the functionalities for all levels of pricing with Cutt.ly (that is the Free Plan). 
+You are free to incorporate more features into this system in case you are opting to choose other paid plans with Cutt.ly. Also, glich may 
+place this application on __sleep mode__ if there has been no activity for a while. You may or may not experience some delay.
 
-## Hosting and API endpoints
+## Getting Started
+The first and the easiest way to use this system, is through the API endpoints mentioned below. Here there is a clear indication of the type of request that needs to be used along with a payload (if applicable). Alternatively, you could download or clone this repository, perform ```npm install``` to fetch all the required NPM Packages and run the server locally.
+
+## Prerequisites
+The only major requirement is a current and stable version of NodeJS with ES2015 support.
+
+## Built Using
+- [NodeJS](https://nodejs.org/en/)
+- [ExpressJS](https://expressjs.com/)
+
+## Usage
 This application is hosted on Glitch @ https://cuttly-node-api.glitch.me/. On loading the base url, you should be able to see a response 
 from the system. Here are the API Endpoints that are available with their requirements (if applicable):
 
-- __[GET] https://cuttly-nodejs-api.glitch.me/__
+- ![Get Request](https://img.shields.io/badge/method-get-orange) https://cuttly-nodejs-api.glitch.me<br/>
   Gives you a response containing details about the application along with author details
 
-- __[POST] https://cuttly-nodejs-api.glitch.me/api/shrink-url__
+- ![Post Request](https://img.shields.io/badge/method-post-orange) https://cuttly-nodejs-api.glitch.me/api/shrink-url<br/>
   Payload:
   ```
   {
@@ -33,7 +43,7 @@ from the system. Here are the API Endpoints that are available with their requir
   custom shortname what you wish to give for your URL. If the shortname is available through Cutt.ly then its applied. If omitted, then cutt.ly will 
   help generate a custom shortname for you
 
-- __[POST] https://cuttly-nodejs-api.glitch.me/api/get-stats__
+- ![Post Request](https://img.shields.io/badge/method-post-orange) https://cuttly-nodejs-api.glitch.me/api/get-stats<br/>
   Payload:
   ```
   {
@@ -48,18 +58,13 @@ from the system. Here are the API Endpoints that are available with their requir
 ## Response Formats
 All of the API responses will carry an __"api-ok"__ that represents a successful API request that has been made. Any other code in the response will 
 signify that there has been some kind of error. Each of these responses will carry a __payload__ field which may contain data based on the request 
-that is being made. For more information about the response details from cutt.ly, (check this documenation)[https://cutt.ly/api-documentation/cuttly-links-api]
+that is being made. For more information about the response details from cutt.ly, [check this documenation](https://cutt.ly/api-documentation/cuttly-links-api)
 The payload in the response will carry the response from cutt.ly (if applicable).
 
-## Remember...
-Please note that this system helps cater to most of the functionalities for all levels of pricing with Cutt.ly (that is the Free Plan). 
-You are free to incorporate more features into this system in case you are opting to choose other paid plans with Cutt.ly. Also, glich may 
-place this application on __sleep mode__ if there has been no activity for a while. You may or may not experience some delay.
-
-## Feature Requests or Raising Issues
+## Feature Requests and Raising Issues
 If you would like to suggest a new feature for this app or perhaps you have experienced some problems, go ahead and raise a good old github issue. 
 I'll work on this at the earliest possible depending on my schedule and keep you posted as well.
 
-## Support this Project
+## Support
 I'd be very grateful if you could support this project with a Github star as this would go a long way in building more apps like these. 
 Happy Coding!
