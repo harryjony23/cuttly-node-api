@@ -37,7 +37,6 @@ from the system. Here are the API Endpoints that are available with their requir
   Gives you a response containing details about the application along with author details
 
 - ![Post Request](https://img.shields.io/badge/method-post-orange) https://cuttly-nodejs-api.glitch.me/api/shrink-url<br/>
-  Payload:
 
   ```console
   foo@bar:~$ curl -H "Content-type: application/json" -XPOST -d '{"apiKey": "your-api-key", "requestUrl": "https://www.example.com", "name": "someexamplename"}' 'https://cuttly-nodejs-api.glitch.me/api/shrink-url'
@@ -49,7 +48,6 @@ from the system. Here are the API Endpoints that are available with their requir
   help generate a custom shortname for you
 
 - ![Post Request](https://img.shields.io/badge/method-post-orange) https://cuttly-nodejs-api.glitch.me/api/get-stats<br/>
-  Payload:
   ```console
   foo@bar:~$ curl -H "Content-type: application/json" -XPOST -d '{"apiKey": "your-api-key", "url": "https://cutt.ly/exampleshortname"}' 'https://cuttly-nodejs-api.glitch.me/api/get-stats'
   ```
