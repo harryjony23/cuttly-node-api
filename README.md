@@ -1,4 +1,9 @@
 # Cutt.ly Node API
+![Status](https://img.shields.io/github/checks-status/sricharankrishnan/cuttly-node-api/master)
+![Open Issues](https://img.shields.io/github/issues-raw/sricharankrishnan/newsapiorg-node-api)
+![Closed Issues](https://img.shields.io/github/issues-closed-raw/sricharankrishnan/cuttly-node-api)
+![License](https://img.shields.io/github/license/sricharankrishnan/cuttly-node-api)
+<br/>
 An open source Node/Express app that helps you to perform requests to Cutt.ly API @ (Cutty API Docs)[https://cutt.ly/api-documentation/]
 Cutt.ly is a Url-Shortner service. (https://cutt.ly/). To be able to use this system, please ensure to register with Cutt.ly and 
 get your secret API key.
