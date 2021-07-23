@@ -1,6 +1,6 @@
 # Cutt.ly Node API
 ![Status](https://img.shields.io/github/checks-status/sricharankrishnan/cuttly-node-api/master)
-![Open Issues](https://img.shields.io/github/issues-raw/sricharankrishnan/newsapiorg-node-api)
+![Open Issues](https://img.shields.io/github/issues-raw/sricharankrishnan/cuttly-node-api)
 ![Closed Issues](https://img.shields.io/github/issues-closed-raw/sricharankrishnan/cuttly-node-api)
 ![License](https://img.shields.io/github/license/sricharankrishnan/cuttly-node-api)
 <br/>
