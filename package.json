@@ -1,12 +1,16 @@
 {
-  "name": "node-app-jquery-backend",
+  "name": "cuttly-node-api",
   "version": "1.0.0",
-  "description": "NodeJS Application - Backend Structure",
+  "description": "An open source Node/Express app that helps you to perform requests to Cutt.ly API",
   "main": "server.js",
   "scripts": {
     "start": "node ./server.js"
   },
   "author": "Sricharan Krishnan | https://github.com/sricharankrishnan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sricharankrishnan/cuttly-node-api"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
@@ -21,5 +25,5 @@
   "devDependencies": {
     "nodemon": "^2.0.2"
   },
-  "license": "ISC"
+  "license": "MIT"
 }
